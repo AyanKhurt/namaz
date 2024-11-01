@@ -8,7 +8,7 @@ function namaz() {
             let namaz = response.data;
             console.log(namaz)
             document.getElementById("namaz1").innerHTML = `<h2>fajar: ${namaz.data.timings.Fajr} br zahor: ${namaz.data.timings.Dhuhr}            ` ;
-            console.log(namaz.data.timings.Fajr)
+            console.log(namaz.data.timings.Fajr , namaz.data.timings.Dhuhr)
 
         })
         .catch(function(err) {
